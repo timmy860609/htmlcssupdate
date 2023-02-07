@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Courier New', Courier, monospace;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+    max-width:100%; 
+    height:auto;
+}
+
+.wrap{
+	margin: 0 auto;
+	max-width: 100%;
+}
+
+.social{
+	background-color: rgb(243, 243, 243) ;
+	}
+.social ul{
+	display: flex;
+	justify-content: right;
+	padding: 10px;
+	margin-right: 20px;
+}
+.facebook,.twitter {
+	margin-left: 20px;
+}
+.facebook a,.twitter a{
+	text-decoration: none;
+	margin-left: 5px;
+	color: black;
+}
+.logo{
+	background-image: url(../project/img/hex.png);
+	width: 176px;
+	height: 50px;
+	text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+.menu ul{
+	display: flex;
+}
+.menu li {
+	padding: 10px;
+	margin-right: 20px;
+}
+.menu li a{
+	text-decoration: none;
+	color: rgb(40, 184, 160);
+}
+.menu li a:hover{
+	font-weight: bolder;
+	background-color: rgb(222, 250, 245);
+	border-bottom: 3px solid rgb(40, 184, 160);
+}
+.content{
+	background-image: url(../project/img/teachable.png);
+	background-size: cover;
+	padding: 20% 0;
+	background-position: center center;
+	position: relative;
+	
+}
+.word{
+	width: 100%;
+	padding: 20px 0;
+	background-color: rgba(32, 32, 32, 0.465);
+	position: absolute;
+	left: 0;
+	bottom: 30%;
+}
+.word p{
+	font-size: 50px;
+	color: white;
+	margin-top: 10px;
+	margin-left: 20px;
+	line-height: 60px;
+	letter-spacing: 5px;
+	font-family: 'Courier New', Courier, monospace;
+}
+.box{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+.box-1{
+	text-align: center;
+	padding: 20px;
+	background-color: white;
+	margin: 1%;
+	width: 33.3333%;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.box h2{
+	font-size: 20px;
+	margin: 15px 0;
+	font-weight: bolder;
+	letter-spacing: 2px;	
+}
+.box p{
+	letter-spacing: 2px;
+	line-height: 30px;
+}
+.table-1{
+	padding-bottom: 60px;
+}
+.table-word{
+	text-align: center;
+	margin: 60px auto 40px ;
+	font-size: 45px;
+}
+.table-content{
+	margin: 0 auto;
+}
+.table-content th{
+	font-weight: bolder;
+	background-color: rgb(237, 235, 235);
+}
+
+.table-content th,.table-content td{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: left;
+	padding: 20px 80px;
+	font-size: 30px;
+}
+.table-content span{
+	color: #009972;
+}
+.qanda{
+	padding-bottom: 20px;
+	background:linear-gradient(#00664c, #009972);
+}
+.qaword{
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	letter-spacing: 3px;
+	font-size: 45px;
+	line-height: 60px;
+	color: white;
+}
+.form{
+	display: flex;
+	padding: 20px 0;
+}
+.textinput{
+	width: 40%;
+	margin: 0 auto;
+}
+.input{
+	width: 40%;
+	margin: 0 auto;
+}
+input[type="text"]{
+	color: #00664c;
+	height: 30px;
+	border-radius: 4px;
+	border: 0;
+	width: 90%;
+	display: block;
+	padding: 10px ;
+	font-size: 20px;
+}
+label{
+	color: aliceblue;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+	display: block;
+}
+textarea{
+	width: 99%;
+	height: 99%;
+	border-radius: 4px;
+	font-size: 20px;
+	padding: 1%;
+	float: right;
+	border: 0;
+}
+.footer-logo{
+	background-image: url(../project/img/hex.png);
+	width: 176px;
+	height: 50px;
+	text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 10%;
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 0;
+}.footer-list{
+	margin-right: 10%;
+}
+.footer-list p{
+	color: rgb(219, 30, 30);
+	font-weight: bold;
+	margin-top: 10px;
+	font-size: 20px;
+}
+.footer-list h3{
+	margin-top: 10%;
+	font-size: 25px;
+}
+/* pc上隱藏漢堡選單 */
+.showmenu{
+	display: none;
+}
+
+@media (max-width:960px) {
+	.menu {
+		/*隱藏選單開始*/
+		max-height: 0px;
+		overflow: hidden;
+		/*隱藏選單結束*/
+		transition: max-height 2.3s;
+		margin-top: 1px;
+		/*絕對定位疊在網頁上*/
+		position: absolute;
+		z-index: 100;
+		/*header 80px+1px boder 線條*/
+		top: 81px;
+		left: 0;
+		right: 0;
+		background:#000;
+	  }
+	.showmenu{
+		display: block;
+		float: right;
+		margin: 1em;
+		color: #009972;
+		text-decoration: none;
+		font-size: 20px;
+		font-weight: bold;
+	  }
+	.menu li{
+		float: none;
+		display: block;
+		border-bottom: 1px dashed #69CA62;
+	  }
+	.menu li a{
+		transition: all 0.3s;
+	  }
+	.menu li a:hover{
+		background: #69CA62;
+		color: #fff;
+	  }
+	.social{
+		width: 100%;
+		margin:  0 auto;
+	}
+	.header{
+		align-items: center;
+		background-color: white;
+		width: 100%;
+		position: relative;
+	}
+	.logo{
+		margin-left: 20px;
+	}
+	.box{
+		flex-direction: column;
+		align-items: center;
+		width: 94%;
+        padding: 2% 1%;
+        margin: 2% 2%
+	}
+	.box-1{
+		width: 94%;
+		padding-left: 2% 2%;
+		margin: 2% 2%;
+	}
+	.word p {
+		font-size: 40px;
+		line-height: 40px;
+		font-weight: bold;
+	}
+	.footer{
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer-logo{
+		margin-bottom: 10px;
+		margin-top: 10px;
+		margin:0 auto;
+	}
+	.container{
+		overflow-x: auto;
+	}
+	.footer-list{
+		margin: 0 auto;
+	}
+	.footer-list li h3{
+		text-align: center;
+	}
+	.footer-list li p{
+		margin: 10px ;
+	}
+	.qaword{
+		font-size: 40px;
+	}
+	.table-content{
+		width: 960px;
+	}
+	.form{
+		flex-direction: column;
+	}
+	.textinput{
+		width: 80%;
+		margin-bottom: 20px;
+		padding: 0;
+	}
+	.input{
+		width: 80%;
+	}
+	input[type="text"]{
+		color: #00664c;
+		height: 40px;
+		width: 99%;
+		display: block;
+		padding: 1% ;
+		font-size: 18px;
+	}
+	label{
+		margin: 15px 0;
+	}
+	.table-content th,.table-content td{
+		font-size: 20px;
+		padding: 20px;
+	}
+	.content{
+		background-size: cover;
+	}
+	.footer-list li{
+		text-align: center;
+	}
+	.footer-list p{
+		font-size: 15px;
+	}
+	.footer-list h3{
+		font-size: 20px;
+	}
+	.menu-show.menu{
+		max-height: 500px;
+	}
+}
